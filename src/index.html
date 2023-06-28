@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Shop</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main id="main">
+        <header id="mainHeader">
+          <h1 id="orderViewArea">Область просмотра заказа:</h1>
+        </header>
+        <section id="orderArea">
+          <div id="orderListWrapper">
+            <ul id="selectedIngredientsList"></ul>
+            <div id="orderPrice">
+              <p id="priceText">total price</p>
+              <p id="priceValue">$0</p>
+            </div>
+          </div>
+        </section>
+        <section id="ingredientsArea">
+          <div class="ingredientsBlock">
+            <h3 class="ingredientsTitles">Основа пиццы</h3>
+
+            <ul class="ingredientsLists">
+              <li class="ingredients">Тесто дрожжевое</li>
+              <li class="ingredients">Тесто бездрожжевое</li>
+              <li class="ingredients">Тесто Аля-Фитнесс</li>
+              <li class="ingredients">Тесто от шефа</li>
+            </ul>
+          </div>
+
+          <div class="ingredientsBlock">
+            <h3 class="ingredientsTitles">Мясо</h3>
+
+            <ul class="ingredientsLists">
+              <li class="ingredients">Говядина</li>
+              <li class="ingredients">Курица</li>
+              <li class="ingredients">Свинина</li>
+              <li class="ingredients">Индюшатина</li>
+            </ul>
+          </div>
+
+          <div class="ingredientsBlock">
+            <h3 class="ingredientsTitles">Овощи</h3>
+
+            <ul class="ingredientsLists">
+              <li class="ingredients">Помидоры</li>
+              <li class="ingredients">Грибы</li>
+              <li class="ingredients">Зелень</li>
+              <li class="ingredients">Оливки</li>
+            </ul>
+          </div>
+
+          <div class="ingredientsBlock">
+            <h3 class="ingredientsTitles">Сыр</h3>
+
+            <ul class="ingredientsLists">
+              <li class="ingredients">Пешехонский</li>
+              <li class="ingredients">Российский</li>
+              <li class="ingredients">Сливочный</li>
+              <li class="ingredients">Бабушкина крынка</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <section id="pizzaSection">
+        <div id="pizzaSectionBg">
+          <div id="pizzaImage">
+            <div id="imageBlock1"></div>
+            <div id="imageBlock2"></div>
+            <div id="imageBlock3"></div>
+            <div id="imageBlock4"></div>
+          </div>
+        </div>
+
+        <button id="orderButton">order</button>
+      </section>
+
+      <div id="modalWindow">
+        <div id="modalContent">
+          <p>У вас отличный вкус ! Спасибо за заказ !</p>
+          <p>
+            Your order total price is <span id="priceInModalValue">$0</span>.
+          </p>
+        </div>
+
+        <button id="modalButton">Ok</button>
+      </div>
+    </div>
+  </body>
+</html>
